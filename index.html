@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Inicio — E‑commerce</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  
+<header>
+  <div class="brand">
+    <div class="logo">🛍️</div>
+    <div>E‑commerce</div>
+  </div>
+  <nav>
+    <a class="navbtn secondary" href="index.html">Inicio</a>
+    <a class="navbtn secondary" href="catalog.html">Catálogo</a>
+    <a class="navbtn secondary navbtn badge" id="nav-cart" data-badge="0" href="cart.html">Carrito</a>
+    <a class="navbtn secondary" href="checkout.html">Checkout</a>
+    <a class="navbtn" id="btn-login-toggle" href="login.html">Login</a>
+  </nav>
+</header>
+
+  <main class="container">
+    <section class="card">
+      <h2 class="title">Bienvenido 👋</h2>
+      <p class="subtitle">e‑commerce (solo Front):Sin backend.</p>
+      <div class="grid cols-3">
+        <div class="msg"><strong>1) Catálogo</strong><br/>Explora productos y agrégalos al carrito.</div>
+        <div class="msg"><strong>2) Carrito</strong><br/>Actualiza cantidades y mira el total.</div>
+        <div class="msg"><strong>3) Checkout</strong><br/>Inicia sesión y finaliza la compra (simulada).</div>
+      </div>
+    </section>
+  </main>
+  <footer>Sin backend.</footer>
+  <script src="js/app.js"></script>
+  <script>App.initBase();</script>
+</body>
+</html>

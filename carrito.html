@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Carrito</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  
+<header>
+  <div class="brand">
+    <div class="logo">🛍️</div>
+    <div>E‑commerce Simple</div>
+  </div>
+  <nav>
+    <a class="navbtn secondary" href="index.html">Inicio</a>
+    <a class="navbtn secondary" href="catalog.html">Catálogo</a>
+    <a class="navbtn secondary navbtn badge" id="nav-cart" data-badge="0" href="cart.html">Carrito</a>
+    <a class="navbtn secondary" href="checkout.html">Checkout</a>
+    <a class="navbtn" id="btn-login-toggle" href="login.html">Login</a>
+  </nav>
+</header>
+
+  <main class="container">
+    <section class="card">
+      <h2 class="title">Carrito</h2>
+      <div id="cart-empty" class="msg hidden">Tu carrito está vacío. Ve al <a href="catalog.html">catálogo</a>.</div>
+      <div id="cart-wrap" class="hidden">
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th class="right">Precio</th>
+              <th class="right">Subtotal</th>
+              <th class="right">Cant.</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="cart-body"></tbody>
+        </table>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:12px;">
+          <button class="btn danger" id="btn-clear">Vaciar carrito</button>
+          <div style="text-align:right;">
+            <div class="muted">Total:</div>
+            <div id="cart-total" class="title" style="margin:0;"></div>
+          </div>
+        </div>
+        <div style="margin-top:16px; text-align:right;">
+          <a class="btn" href="checkout.html">Ir a Checkout</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer> Sin backend.</footer>
+  <script src="js/app.js"></script>
+  <script>App.initBase(); App.renderCart();</script>
+</body>
+</html>
