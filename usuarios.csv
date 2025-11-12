@@ -1,0 +1,101 @@
+uid,nombre,email,telefono,fecharegistro,marketingOptIn,ciudad,departamento,pais
+u1001,Andrea Camacho,andrea.camacho@email.com,3211234567,2025-10-22T08:00:00Z,true,Armenia,Quindio,Colombia
+u1002,Juan Perez,juan.perez@email.com,3109876543,2025-10-23T09:15:00Z,false,Bogota,Cundinamarca,Colombia
+u1003,Maria Gomez,maria.gomez@email.com,3001234567,2025-10-24T10:30:00Z,true,Medellin,Antioquia,Colombia
+u1004,Carlos Rodriguez,carlos.r@email.com,3158765432,2025-10-25T11:45:00Z,true,Cali,Valle del Cauca,Colombia
+u1005,Ana Martinez,ana.martinez@email.com,3207654321,2025-10-26T12:00:00Z,false,Barranquilla,Atlantico,Colombia
+u1006,David Lopez,david.lopez@email.com,3112345678,2025-10-27T13:10:00Z,true,Bogota,Cundinamarca,Colombia
+u1007,Laura Fernandez,laura.f@email.com,3018765432,2025-10-28T14:20:00Z,true,Medellin,Antioquia,Colombia
+u1008,Sergio Ramirez,sergio.r@email.com,3167654321,2025-10-29T15:30:00Z,false,Bucaramanga,Santander,Colombia
+u1009,Paula Torres,paula.torres@email.com,3223456789,2025-10-30T16:40:00Z,true,Cartagena,Bolivar,Colombia
+u1010,Javier Diaz,javier.diaz@email.com,3129876543,2025-10-31T17:50:00Z,false,Cali,Valle del Cauca,Colombia
+u1011,Sofia Castro,sofia.castro@email.com,3028765432,2025-11-01T08:00:00Z,true,Bogota,Cundinamarca,Colombia
+u1012,Mateo Moreno,mateo.moreno@email.com,3177654321,2025-11-01T09:15:00Z,true,Medellin,Antioquia,Colombia
+u1013,Valentina Ortiz,valentina.o@email.com,3234567890,2025-11-01T10:30:00Z,false,Armenia,Quindio,Colombia
+u1014,Daniel Silva,daniel.silva@email.com,3139876543,2025-11-01T11:45:00Z,true,Bogota,Cundinamarca,Colombia
+u1015,Camila Herrera,camila.h@email.com,3038765432,2025-11-01T12:00:00Z,true,Pereira,Risaralda,Colombia
+u1016,Andres Jimenez,andres.j@email.com,3187654321,2025-11-02T13:10:00Z,false,Cali,Valle del Cauca,Colombia
+u1017,Gabriela Mora,gabriela.m@email.com,3245678901,2025-11-02T14:20:00Z,true,Medellin,Antioquia,Colombia
+u1018,Sebastian Vargas,sebastian.v@email.com,3149876543,2025-11-02T15:30:00Z,false,Bogota,Cundinamarca,Colombia
+u1019,Isabella Rios,isabella.r@email.com,3048765432,2025-11-02T16:40:00Z,true,Bucaramanga,Santander,Colombia
+u1020,Felipe Guzman,felipe.guzman@email.com,3197654321,2025-11-02T17:50:00Z,true,Barranquilla,Atlantico,Colombia
+u1021,Luciana Peña,luciana.p@email.com,3256789012,2025-11-03T08:00:00Z,false,Cali,Valle del Cauca,Colombia
+u1022,Emilio Rojas,emilio.rojas@email.com,3159876543,2025-11-03T09:15:00Z,true,Medellin,Antioquia,Colombia
+u1023,Elena Sanchez,elena.sanchez@email.com,3058765432,2025-11-03T10:30:00Z,true,Bogota,Cundinamarca,Colombia
+u1024,Nicolas Mejia,nicolas.mejia@email.com,3267890123,2025-11-03T11:45:00Z,false,Cartagena,Bolivar,Colombia
+u1025,Antonia Leon,antonia.leon@email.com,3169876543,2025-11-03T12:00:00Z,true,Pereira,Risaralda,Colombia
+u1026,Samuel Luna,samuel.luna@email.com,3068765432,2025-11-04T13:10:00Z,false,Bogota,Cundinamarca,Colombia
+u1027,Mariana Parra,mariana.parra@email.com,3278901234,2025-11-04T14:20:00Z,true,Medellin,Antioquia,Colombia
+u1028,Benjamin Gil,benjamin.gil@email.com,3179876543,2025-11-04T15:30:00Z,true,Cali,Valle del Cauca,Colombia
+u1029,Victoria Marin,victoria.marin@email.com,3078765432,2025-11-04T16:40:00Z,false,Bucaramanga,Santander,Colombia
+u1030,Matias Cardenas,matias.cardenas@email.com,3289012345,2025-11-04T17:50:00Z,true,Barranquilla,Atlantico,Colombia
+u1031,Alejandra Avila,alejandra.avila@email.com,3189876543,2025-11-05T08:00:00Z,false,Bogota,Cundinamarca,Colombia
+u1032,Tomas Franco,tomas.franco@email.com,3088765432,2025-11-05T09:15:00Z,true,Medellin,Antioquia,Colombia
+u1033,Manuela Bravo,manuela.bravo@email.com,3290123456,2025-11-05T10:30:00Z,true,Cali,Valle del Cauca,Colombia
+u1034,Simon Guerrero,simon.guerrero@email.com,3198765432,2025-11-05T11:45:00Z,false,Armenia,Quindio,Colombia
+u1035,Sara Mendoza,sara.mendoza@email.com,3098765432,2025-11-05T12:00:00Z,true,Bogota,Cundinamarca,Colombia
+u1036,Martin Suarez,martin.suarez@email.com,3301234567,2025-11-06T13:10:00Z,false,Pereira,Risaralda,Colombia
+u1037,Juana Pardo,juana.pardo@email.com,3209876543,2025-11-06T14:20:00Z,true,Medellin,Antioquia,Colombia
+u1038,Esteban Osorio,esteban.osorio@email.com,3118765432,2025-11-06T15:30:00Z,true,Cali,Valle del Cauca,Colombia
+u1039,Margarita Flores,margarita.flores@email.com,3312345678,2025-11-06T16:40:00Z,false,Barranquilla,Atlantico,Colombia
+u1040,Adrian Velez,adrian.velez@email.com,3219876543,2025-11-06T17:50:00Z,true,Bucaramanga,Santander,Colombia
+u1041,Valeria Campos,valeria.campos@email.com,3128765432,2025-11-07T08:00:00Z,false,Bogota,Cundinamarca,Colombia
+u1042,Jerónimo Quintero,jeronimo.q@email.com,3323456789,2025-11-07T09:15:00Z,true,Medellin,Antioquia,Colombia
+u1043,Renata Villegas,renata.villegas@email.com,3229876543,2025-11-07T10:30:00Z,true,Cali,Valle del Cauca,Colombia
+u1044,Lucas Roman,lucas.roman@email.com,3138765432,2025-11-07T11:45:00Z,false,Cartagena,Bolivar,Colombia
+u1045,Salome Molina,salome.molina@email.com,3334567890,2025-11-07T12:00:00Z,true,Bogota,Cundinamarca,Colombia
+u1046,Elias Sierra,elias.sierra@email.com,3239876543,2025-11-08T13:10:00Z,false,Medellin,Antioquia,Colombia
+u1047,Clara Hoyos,clara.hoyos@email.com,3148765432,2025-11-08T14:20:00Z,true,Pereira,Risaralda,Colombia
+u1048,Pascual Orozco,pascual.orozco@email.com,3345678901,2025-11-08T15:30:00Z,true,Cali,Valle del Cauca,Colombia
+u1049,Eloisa Giraldo,eloisa.giraldo@email.com,3249876543,2025-11-08T16:40:00Z,false,Bogota,Cundinamarca,Colombia
+u1050,Abel Santana,abel.santana@email.com,3158765432,2025-11-08T17:50:00Z,true,Armenia,Quindio,Colombia
+u1051,Adelaida Paez,adelaida.paez@email.com,3356789012,2025-11-09T08:00:00Z,false,Medellin,Antioquia,Colombia
+u1052,Bruno Cortes,bruno.cortes@email.com,3259876543,2025-11-09T09:15:00Z,true,Bucaramanga,Santander,Colombia
+u1053,Celia Roldan,celia.roldan@email.com,3168765432,2025-11-09T10:30:00Z,true,Barranquilla,Atlantico,Colombia
+u1054,Dario Zapata,dario.zapata@email.com,3367890123,2025-11-09T11:45:00Z,false,Cali,Valle del Cauca,Colombia
+u1055,Elisa Beltran,elisa.beltran@email.com,3269876543,2025-11-09T12:00:00Z,true,Bogota,Cundinamarca,Colombia
+u1056,Fabian Naranjo,fabian.naranjo@email.com,3178765432,2025-11-10T13:10:00Z,false,Medellin,Antioquia,Colombia
+u1057,Gala Bustamante,gala.bustamante@email.com,3378901234,2025-11-10T14:20:00Z,true,Cartagena,Bolivar,Colombia
+u1058,Hector Pineda,hector.pineda@email.com,3279876543,2025-11-10T15:30:00Z,true,Pereira,Risaralda,Colombia
+u1059,Irene Benitez,irene.benitez@email.com,3188765432,2025-11-10T16:40:00Z,false,Cali,Valle del Cauca,Colombia
+u1060,Joel Soto,joel.soto@email.com,3389012345,2025-11-10T17:50:00Z,true,Bogota,Cundinamarca,Colombia
+u1061,Lina Rincon,lina.rincon@email.com,3289876543,2025-11-11T08:00:00Z,false,Medellin,Antioquia,Colombia
+u1062,Marcos Bernal,marcos.bernal@email.com,3198765432,2025-11-11T09:15:00Z,true,Bucaramanga,Santander,Colombia
+u1063,Nora Pinto,nora.pinto@email.com,3390123456,2025-11-11T10:30:00Z,true,Barranquilla,Atlantico,Colombia
+u1064,Oscar Duarte,oscar.duarte@email.com,3299876543,2025-11-11T11:45:00Z,false,Bogota,Cundinamarca,Colombia
+u1065,Pilar Solano,pilar.solano@email.com,3208765432,2025-11-11T12:00:00Z,true,Armenia,Quindio,Colombia
+u1066,Raul Coronado,raul.coronado@email.com,3401234567,2025-11-12T13:10:00Z,false,Medellin,Antioquia,Colombia
+u1067,Rosa Gallego,rosa.gallego@email.com,3309876543,2025-11-12T14:20:00Z,true,Cali,Valle del Cauca,Colombia
+u1068,Saul Duran,saul.duran@email.com,3218765432,2025-11-12T15:30:00Z,true,Cartagena,Bolivar,Colombia
+u1069,Talia Montero,talia.montero@email.com,3412345678,2025-11-12T16:40:00Z,false,Bogota,Cundinamarca,Colombia
+u1070,Uriel Acosta,uriel.acosta@email.com,3319876543,2025-11-12T17:50:00Z,true,Pereira,Risaralda,Colombia
+u1071,Violeta Bermeo,violeta.bermeo@email.com,3228765432,2025-11-13T08:00:00Z,false,Medellin,Antioquia,Colombia
+u1072,Walter Cubillos,walter.cubillos@email.com,3423456789,2025-11-13T09:15:00Z,true,Bucaramanga,Santander,Colombia
+u1073,Ximena Zarate,ximena.zarate@email.com,3329876543,2025-11-13T10:30:00Z,true,Cali,Valle del Cauca,Colombia
+u1074,Yago Arango,yago.arango@email.com,3238765432,2025-11-13T11:45:00Z,false,Bogota,Cundinamarca,Colombia
+u1075,Zoe Zambrano,zoe.zambrano@email.com,3434567890,2025-11-13T12:00:00Z,true,Barranquilla,Atlantico,Colombia
+u1076,Alberto Mesa,alberto.mesa@email.com,3339876543,2025-11-14T13:10:00Z,false,Medellin,Antioquia,Colombia
+u1077,Beatriz Londoño,beatriz.londono@email.com,3248765432,2025-11-14T14:20:00Z,true,Bogota,Cundinamarca,Colombia
+u1078,Camilo Franco,camilo.franco@email.com,3445678901,2025-11-14T15:30:00Z,true,Armenia,Quindio,Colombia
+u1079,Diana Munevar,diana.munevar@email.com,3349876543,2025-11-14T16:40:00Z,false,Cali,Valle del Cauca,Colombia
+u1080,Ernesto Falla,ernesto.falla@email.com,3258765432,2025-11-14T17:50:00Z,true,Medellin,Antioquia,Colombia
+u1081,Fernanda Posada,fernanda.posada@email.com,3456789012,2025-11-15T08:00:00Z,false,Cartagena,Bolivar,Colombia
+u1082,Gustavo Niño,gustavo.nino@email.com,3359876543,2025-11-15T09:15:00Z,true,Bogota,Cundinamarca,Colombia
+u1083,Ines Salgado,ines.salgado@email.com,3268765432,2025-11-15T10:30:00Z,true,Pereira,Risaralda,Colombia
+u1084,Jesus Abadia,jesus.abadia@email.com,3467890123,2025-11-15T11:45:00Z,false,Cali,Valle del Cauca,Colombia
+u1085,Karina Pabon,karina.pabon@email.com,3369876543,2025-11-15T12:00:00Z,true,Medellin,Antioquia,Colombia
+u1086,Leon Cifuentes,leon.cifuentes@email.com,3278765432,2025-11-16T13:10:00Z,false,Bucaramanga,Santander,Colombia
+u1087,Luz Daza,luz.daza@email.com,3478901234,2025-11-16T14:20:00Z,true,Bogota,Cundinamarca,Colombia
+u1088,Mario Ibarra,mario.ibarra@email.com,3379876543,2025-11-16T15:30:00Z,true,Barranquilla,Atlantico,Colombia
+u1089,Nidia Serna,nidia.serna@email.com,3288765432,2025-11-16T16:40:00Z,false,Cali,Valle del Cauca,Colombia
+u1090,Omar Fierro,omar.fierro@email.com,3489012345,2025-11-16T17:50:00Z,true,Medellin,Antioquia,Colombia
+u1091,Olga Tamayo,olga.tamayo@email.com,3389876543,2025-11-17T08:00:00Z,false,Bogota,Cundinamarca,Colombia
+u1092,Pedro Gaviria,pedro.gaviria@email.com,3298765432,2025-11-17T09:15:00Z,true,Cartagena,Bolivar,Colombia
+u1093,Quintin Lara,quintin.lara@email.com,3490123456,2025-11-17T10:30:00Z,true,Cali,Valle del Cauca,Colombia
+u1094,Rebeca Yusti,rebeca.yusti@email.com,3399876543,2025-11-17T11:45:00Z,false,Medellin,Antioquia,Colombia
+u1095,Sandra Polo,sandra.polo@email.com,3308765432,2025-11-17T12:00:00Z,true,Bogota,Cundinamarca,Colombia
+u1096,Teo Henao,teo.henao@email.com,3501234567,2025-11-18T13:10:00Z,false,Pereira,Risaralda,Colombia
+u1097,Ursula Mena,ursula.mena@email.com,3409876543,2025-11-18T14:20:00Z,true,Armenia,Quindio,Colombia
+u1098,Victor Ulloa,victor.ulloa@email.com,3318765432,2025-11-18T15:30:00Z,true,Cali,Valle del Cauca,Colombia
+u1099,Wendy Chacon,wendy.chacon@email.com,3512345678,2025-11-18T16:40:00Z,false,Medellin,Antioquia,Colombia
+u1100,Alex Alvear,alex.alvear@email.com,3419876543,2025-11-18T17:50:00Z,true,Bogota,Cundinamarca,Colombia

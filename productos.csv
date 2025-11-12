@@ -1,0 +1,102 @@
+productoId,nombre,descripcion,marca,categoria,precio,stock
+p4001,RTX 4090 Gaming OC,Gigabyte RTX 4090 Gaming OC 24GB,Gigabyte,GPU,8700000,10
+p4002,RTX 4080 Super TUF,ASUS TUF RTX 4080 Super 16GB,ASUS,GPU,6300000,15
+p4003,RTX 4070 Super Ventus,MSI Ventus RTX 4070 Super 12GB,MSI,GPU,3900000,30
+p4004,RTX 4070 Ti AORUS,Gigabyte AORUS RTX 4070 Ti 12GB,Gigabyte,GPU,4800000,20
+p4005,RX 7900 XTX Pulse,Sapphire Pulse RX 7900 XTX 24GB,Sapphire,GPU,5100000,15
+p4006,RX 7800 XT Hellhound,PowerColor Hellhound RX 7800 XT 16GB,PowerColor,GPU,3100000,35
+p4007,RTX 4060 Ti Strix,ASUS ROG Strix RTX 4060 Ti 8GB,ASUS,GPU,2600000,50
+p4008,RX 7900 GRE Speedster,XFX Speedster RX 7900 GRE 16GB,XFX,GPU,3400000,22
+p4009,RTX 4090 Suprim Liquid,MSI Suprim Liquid X RTX 4090 24GB,MSI,GPU,9500000,5
+p4010,RTX 4080S AORUS Master,Gigabyte AORUS Master RTX 4080 Super,Gigabyte,GPU,6800000,12
+p4011,Core i9 14900K,Procesador Intel Core i9 14900K,Intel,CPU,3100000,25
+p4012,Core i7 14700K,Procesador Intel Core i7 14700K,Intel,CPU,2200000,40
+p4013,Core i5 14600K,Procesador Intel Core i5 14600K,Intel,CPU,1600000,60
+p4014,Ryzen 9 7950X3D,Procesador AMD Ryzen 9 7950X3D,AMD,CPU,2900000,20
+p4015,Ryzen 7 7800X3D,Procesador AMD Ryzen 7 7800X3D,AMD,CPU,1900000,70
+p4016,Ryzen 9 7900X,Procesador AMD Ryzen 9 7900X,AMD,CPU,2100000,30
+p4017,Ryzen 7 7700X,Procesador AMD Ryzen 7 7700X,AMD,CPU,1500000,50
+p4018,Core i9 13900KS,Procesador Intel Core i9 13900KS Special Edition,Intel,CPU,3400000,10
+p4019,Ryzen 9 7950X,Procesador AMD Ryzen 9 7950X,AMD,CPU,2500000,15
+p4020,Core i9 14900KF,Procesador Intel Core i9 14900KF (sin graficos),Intel,CPU,2950000,22
+p4021,ROG Strix Z790-H,ASUS ROG Strix Z790-H Gaming WiFi,ASUS,MOBO,1950000,20
+p4022,Z790 AORUS Elite AX,Gigabyte Z790 AORUS Elite AX,Gigabyte,MOBO,1400000,30
+p4023,MPG Z790 Carbon,MSI MPG Z790 Carbon WiFi,MSI,MOBO,2400000,15
+p4024,ROG Strix X670E-F,ASUS ROG Strix X670E-F Gaming WiFi,ASUS,MOBO,2100000,25
+p4025,X670E AORUS Master,Gigabyte X670E AORUS Master,Gigabyte,MOBO,2600000,12
+p4026,B650E Taichi,ASRock B650E Taichi,ASRock,MOBO,1800000,30
+p4027,MPG B650 Tomahawk,MSI MPG B650 Tomahawk WiFi,MSI,MOBO,1100000,45
+p4028,ROG Strix B760-I,ASUS ROG Strix B760-I Gaming WiFi (Mini-ITX),ASUS,MOBO,1250000,35
+p4029,B650M AORUS Elite,Gigabyte B650M AORUS Elite AX,Gigabyte,MOBO,950000,60
+p4030,Z790 Steel Legend,ASRock Z790 Steel Legend WiFi,ASRock,MOBO,1300000,28
+p4031,Vengeance RGB 64GB 6000,Corsair Vengeance RGB DDR5 64GB (2x32) 6000MHz,Corsair,RAM,1250000,50
+p4032,Trident Z5 RGB 32GB 6400,G.Skill Trident Z5 RGB DDR5 32GB (2x16) 6400MHz,G.Skill,RAM,800000,80
+p4033,Fury Renegade 32GB 5600,Kingston Fury Renegade DDR5 32GB (2x16) 5600MHz,Kingston,RAM,720000,70
+p4034,Dominator Platinum 32GB 7200,Corsair Dominator Platinum DDR5 32GB (2x16) 7200MHz,Corsair,RAM,1100000,25
+p4035,Trident Z5 Neo 64GB 6000,G.Skill Trident Z5 Neo RGB (AMD Expo) 64GB (2x32) 6000MHz,G.Skill,RAM,1350000,40
+p4036,Fury Beast 64GB 6000,Kingston Fury Beast DDR5 64GB (2x32) 6000MHz,Kingston,RAM,1150000,60
+p4037,Vengeance 32GB 6000,Corsair Vengeance DDR5 32GB (2x16) 6000MHz,Corsair,RAM,690000,100
+p4038,Samsung 990 Pro 2TB,Samsung 990 Pro 2TB Gen4 NVMe M.2,Samsung,SSD,950000,150
+p4039,WD Black SN850X 2TB,WD Black SN850X 2TB Gen4 NVMe M.2,WD,SSD,900000,120
+p4040,Samsung 990 Pro 1TB,Samsung 990 Pro 1TB Gen4 NVMe M.2,Samsung,SSD,600000,200
+p4041,Crucial P5 Plus 2TB,Crucial P5 Plus 2TB Gen4 NVMe M.2,Crucial,SSD,750000,180
+p4042,Kingston KC3000 2TB,Kingston KC3000 2TB Gen4 NVMe M.2,Kingston,SSD,820000,130
+p4043,WD Black SN850X 4TB,WD Black SN850X 4TB Gen4 NVMe M.2,WD,SSD,2100000,50
+p4044,FireCuda 530 2TB,Seagate FireCuda 530 2TB Gen4 NVMe M.2,Seagate,SSD,980000,70
+p4045,Samsung 980 Pro 1TB,Samsung 980 Pro 1TB Gen4 NVMe M.2,Samsung,SSD,550000,100
+p4046,Corsair MP700 2TB,Corsair MP700 2TB Gen5 NVMe M.2,Corsair,SSD,1600000,25
+p4047,Crucial T700 2TB,Crucial T700 2TB Gen5 NVMe M.2,Crucial,SSD,1550000,30
+p4048,Samsung 870 EVO 4TB,"Samsung 870 EVO 4TB SATA III 2.5""",Samsung,SSD,1400000,40
+p4049,Crucial MX500 2TB,"Crucial MX500 2TB SATA III 2.5""",Crucial,SSD,650000,80
+p4050,Corsair RM1200x Shift,Corsair RM1200x Shift 1200W 80+ Gold,Corsair,PSU,1400000,30
+p4051,Seasonic Vertex PX-1000,Seasonic Vertex PX-1000 1000W 80+ Platinum,Seasonic,PSU,1250000,25
+p4052,ASUS ROG Strix 1000W,ASUS ROG Strix 1000W 80+ Gold Aura Edition,ASUS,PSU,1100000,22
+p4053,Corsair RM1000e,Corsair RMe Series RM1000e 1000W 80+ Gold,Corsair,PSU,900000,50
+p4054,Be Quiet! Dark Power 13,Be Quiet! Dark Power Pro 13 1200W 80+ Titanium,Be Quiet!,PSU,2200000,10
+p4055,MSI MPG A1000G,MSI MPG A1000G PCIE5 1000W 80+ Gold,MSI,PSU,950000,40
+p4056,Corsair RM850e,Corsair RMe Series RM850e 850W 80+ Gold,Corsair,PSU,750000,80
+p4057,Seasonic Focus PX-850,Seasonic Focus PX-850 850W 80+ Platinum,Seasonic,PSU,880000,35
+p4058,Thermaltake GF3 1200W,Thermaltake Toughpower GF3 1200W 80+ Gold,Thermaltake,PSU,1150000,28
+p4059,Corsair SF750,Corsair SF750 750W 80+ Platinum (SFX),Corsair,PSU,800000,50
+p4060,Lian Li O11 Dynamic EVO,Lian Li O11 Dynamic EVO Mid-Tower (Black),Lian Li,CASE,900000,30
+p4061,Lian Li O11 EVO White,Lian Li O11 Dynamic EVO Mid-Tower (White),Lian Li,CASE,920000,25
+p4062,NZXT H9 Flow,NZXT H9 Flow Mid-Tower (Black),NZXT,CASE,850000,28
+p4063,Fractal Design North,Fractal Design North Mid-Tower (Chalk White),Fractal Design,CASE,780000,35
+p4064,Corsair 5000D Airflow,Corsair 5000D Airflow Mid-Tower (Black),Corsair,CASE,700000,40
+p4065,Hyte Y60,Hyte Y60 Mid-Tower (Red),Hyte,CASE,1100000,20
+p4066,Lian Li Lancool 216,Lian Li Lancool 216 RGB (Black),Lian Li,CASE,550000,60
+p4067,Be Quiet! Silent Base 802,Be Quiet! Silent Base 802 (Black),Be Quiet!,CASE,880000,15
+p4068,Fractal Design Torrent,Fractal Design Torrent (Black),Fractal Design,CASE,1050000,12
+p4069,Corsair 7000D Airflow,Corsair 7000D Airflow Full-Tower (White),Corsair,CASE,1400000,10
+foo,,,,,,
+p4070,NZXT Kraken Elite 360,NZXT Kraken Elite 360 RGB 360mm AIO (Black),NZXT,COOLER,1200000,25
+p4071,Lian Li Galahad II 360,Lian Li Galahad II 360 AIO (White),Lian Li,COOLER,950000,30
+p4072,Corsair H150i Elite,Corsair H150i Elite Capellix XT 360mm AIO,Corsair,COOLER,900000,35
+p4073,Arctic Liquid Freezer II,Arctic Liquid Freezer II 360 AIO,Arctic,COOLER,750000,40
+p4074,Noctua NH-D15 Black,Noctua NH-D15 chromax.black (Air Cooler),Noctua,COOLER,550000,50
+p4075,Deepcool AK620 Digital,Deepcool AK620 Digital (Air Cooler),Deepcool,COOLER,380000,60
+p4076,NZXT Kraken 280,NZXT Kraken 280 RGB 280mm AIO (White),NZXT,COOLER,1050000,28
+p4077,Be Quiet! Dark Rock Pro 4,Be Quiet! Dark Rock Pro 4 (Air Cooler),Be Quiet!,COOLER,480000,38
+p4078,Lian Li Uni Fan SL-Inf,Lian Li Uni Fan SL-Infinity 120mm (3-pack),Lian Li,FAN,450000,80
+p4079,Corsair QL120,Corsair QL120 RGB 120mm (3-pack),Corsair,FAN,420000,70
+p4080,Samsung Odyssey Neo G9,"Samsung Odyssey Neo G9 49"" 240Hz",Samsung,MONITOR,7500000,7
+p4081,Alienware AW3423DWF,"Dell Alienware AW3423DWF 34"" QD-OLED 165Hz",Dell,MONITOR,4800000,12
+p4082,LG UltraGear 27GP950,"LG UltraGear 27GP950-B 27"" 4K 144Hz",LG,MONITOR,3100000,20
+p4083,ASUS ROG PG27AQDM,"ASUS ROG Swift PG27AQDM 27"" OLED 240Hz",ASUS,MONITOR,4400000,15
+p4084,Gigabyte M32U,"Gigabyte M32U 32"" 4K 144Hz",Gigabyte,MONITOR,3300000,25
+p4085,"Samsung Odyssey G7 27""","Samsung Odyssey G7 27"" 1440p 240Hz",Samsung,MONITOR,2500000,30
+p4086,Alienware AW3821DW,"Dell Alienware AW3821DW 38"" Ultrawide 144Hz",Dell,MONITOR,5100000,10
+p4087,"LG UltraGear 45"" OLED","LG UltraGear 45GR95QE 45"" Curved OLED 240Hz",LG,MONITOR,6200000,8
+p4088,MSI MPG 321URX OLED,"MSI MPG 321URX QD-OLED 32"" 4K 240Hz",MSI,MONITOR,5300000,18
+p4089,BenQ EW3270U,"BenQ EW3270U 32"" 4K 60Hz (Monitor de entrada 4K)",BenQ,MONITOR,1800000,40
+p4090,Logitech G915 TKL,Logitech G915 TKL Lightspeed Wireless,Logitech,KEYBOARD,800000,50
+p4091,Razer BlackWidow V4 Pro,Razer BlackWidow V4 Pro (Yellow Switches),Razer,KEYBOARD,950000,35
+p4092,ASUS ROG Azoth,ASUS ROG Azoth 75% Wireless,ASUS,KEYBOARD,1100000,25
+p4093,Keychron Q1 Pro,Keychron Q1 Pro 75% QMK/VIA Wireless,Keychron,KEYBOARD,900000,40
+p4094,Logitech G Pro X Superlight 2,Logitech G Pro X Superlight 2 (Black),Logitech,MOUSE,650000,80
+p4095,Razer DeathAdder V3 Pro,Razer DeathAdder V3 Pro (White),Razer,MOUSE,620000,60
+p4096,Logitech G Pro X Superlight 2 W,Logitech G Pro X Superlight 2 (White),Logitech,MOUSE,650000,80
+p4097,Glorious Model O 2,Glorious Model O 2 Wireless (Black),Glorious,MOUSE,500000,50
+p4098,Astro A50 X,Astro A50 X Wireless + Base Station,Astro,HEADSET,1600000,25
+p4099,SteelSeries Arctis Nova Pro,SteelSeries Arctis Nova Pro Wireless,SteelSeries,HEADSET,1500000,30
+p4100,Sennheiser HD 660S2,Sennheiser HD 660S2 Audiophile Headphones,Sennheiser,HEADSET,2300000,20
