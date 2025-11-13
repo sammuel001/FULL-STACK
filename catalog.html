@@ -5,53 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Catálogo</title>
   <link rel="stylesheet" href="css/styles.css"/>
+  <style>
+    .catalog-toolbar{
+      display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:12px;
+    }
+    .catalog-toolbar .input{ min-width:240px; }
+    .catalog-grid{
+      display:grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+      gap:14px;
+    }
+    .cat-section{ margin-top:18px; }
+    .cat-section h3{ margin:8px 0 10px; }
+    .pill{padding:6px 10px; border-radius:999px; background:#eef; color:#223;}
+  </style>
 </head>
 <body>
-  
+
 <header>
   <div class="brand">
     <div class="logo">
-  <img src="assets/logo.jpeg" alt="Logo de la tienda">
-</div>
-
-    <div>E‑commerce Simple</div>
+      <img src="assets/logo.jpeg" alt="Logo de la tienda">
+    </div>
+    <div>E-TECH</div>
   </div>
   <nav>
     <a class="navbtn secondary" href="index.html">Inicio</a>
     <a class="navbtn secondary" href="catalog.html">Catálogo</a>
     <a class="navbtn secondary navbtn badge" id="nav-cart" data-badge="0" href="cart.html">Carrito</a>
     <a class="navbtn secondary" href="checkout.html">Checkout</a>
+    <a class="navbtn secondary" href="orders.html">Mis pedidos</a>
     <a class="navbtn" id="btn-login-toggle" href="login.html">Login</a>
   </nav>
 </header>
 
-  <main class="container">
-    <section class="card">
-      <h2 class="title">Catálogo</h2>
-      <div id="catalog" class="catalog"></div>
-    </section>
-  </main>
-  <footer>Sin backend.</footer>
+<main class="container">
+  <section class="card">
+    <h2 class="title">Catálogo</h2>
 
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <div class="catalog-toolbar">
+      <input id="cat-search" class="input" type="search" placeholder="Buscar por nombre, descripción o SKU…"/>
+      <select id="cat-category" class="input">
+        <option value="__all__">Todas las categorías</option>
+      </select>
+      <span id="cat-count" class="pill">0 productos</span>
+    </div>
 
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyD-8g9y9NqKNAViVCJRFHXanbQ7SKHasrE",
-      authDomain: "ecstatic-acumen-475300-n6.firebaseapp.com",
-      projectId: "ecstatic-acumen-475300-n6",
-      storageBucket: "ecstatic-acumen-475300-n6.firebasestorage.app",
-      messagingSenderId: "21280979455",
-      appId: "1:21280979455:web:5cdb996c43d902f6620fca"
-    };
-    
-    // Inicialización simple y global
-    firebase.initializeApp(firebaseConfig);
-    console.log("Firebase App v8 INICIALIZADA"); 
-  </script>
-  <script src="js/app.js"></script>
-  <script>App.initBase(); App.renderCatalog();</script>
+    <!-- Cuando hay filtro de categoría o texto, renderizamos en una sola grilla -->
+    <div id="catalog" class="catalog-grid"></div>
+
+    <!-- Cuando no hay filtros, renderizamos secciones agrupadas -->
+    <div id="catalog-grouped"></div>
+  </section>
+</main>
+
+<footer>E-Tech.</footer>
+
+<!-- Firebase v8 -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyD-8g9y9NqKNAViVCJRFHXanbQ7SKHasrE",
+    authDomain: "ecstatic-acumen-475300-n6.firebaseapp.com",
+    projectId: "ecstatic-acumen-475300-n6",
+    storageBucket: "ecstatic-acumen-475300-n6.firebasestorage.app",
+    messagingSenderId: "21280979455",
+    appId: "1:21280979455:web:5cdb996c43d902f6620fca"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="js/app.js"></script>
+<script>
+  App.initBase();
+  App.renderCatalog();        // carga y pinta
+  App.bindCatalogFilters();   // búsqueda + filtro categoría
+</script>
 </body>
 </html>

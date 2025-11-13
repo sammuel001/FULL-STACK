@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Registro</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+
+  <!-- Choices.js para selects con buscador -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+
+  <style>
+    /* ===== Fix visual para Choices.js ===== */
+    .choices,
+    .choices__inner,
+    .choices__list--single,
+    .choices__list--dropdown,
+    .choices__list--dropdown .choices__item,
+    .choices__list--dropdown .choices__item--selectable,
+    .choices__input {
+      background: #ffffff !important;
+      color: #111111 !important;
+    }
+    .choices__inner {
+      border: 1px solid #d5d5d5 !important;
+      border-radius: 8px !important;
+      min-height: 44px;
+      padding: 6px 10px !important;
+    }
+    .choices__placeholder,
+    .choices__item--disabled {
+      color: #6b7280 !important;
+    }
+    .choices__list--dropdown {
+      border: 1px solid #d5d5d5 !important;
+      border-radius: 8px !important;
+      box-shadow: 0 8px 24px rgba(0,0,0,.08) !important;
+    }
+    .choices__list--dropdown .choices__item--selectable.is-highlighted {
+      background-color: #f3f4f6 !important;
+      color: #111111 !important;
+    }
+    .choices.is-focused .choices__inner,
+    .choices.is-open .choices__inner {
+      border-color: #4f46e5 !important;
+      box-shadow: 0 0 0 3px rgba(79,70,229,.15) !important;
+    }
+    #reg-depto, #reg-city {
+      color: #111111 !important;
+      background: #ffffff !important;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo">
+      <img src="assets/logo.jpeg" alt="Logo de la tienda">
+    </div>
+    <div class="brand-info">
+      <h1>TecnoStore</h1>
+      <p>Los mejores productos tecnológicos</p>
+    </div>
+  </div>
+  <nav>
+    <a class="navbtn" href="index.html">Inicio</a>
+    <a class="navbtn secondary" href="catalog.html">Catálogo</a>
+    <a class="navbtn secondary" href="orders.html">Mis pedidos</a>
+    <a class="navbtn" id="nav-login" href="login.html">Login</a>
+    <a class="navbtn" id="nav-cart" href="cart.html" data-badge="0">Carrito</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="login-card">
+    <h2 class="title">Crear cuenta</h2>
+
+    <div class="field">
+      <label>Nombre</label>
+      <input class="input" id="reg-name" type="text" placeholder="Tu nombre completo"/>
+    </div>
+
+    <div class="field">
+      <label>Email</label>
+      <input class="input" id="reg-email" type="email" placeholder="tu@email.com"/>
+    </div>
+
+    <div class="field">
+      <label>Teléfono</label>
+      <input class="input" id="reg-phone" type="tel" placeholder="3001234567" required/>
+    </div>
+
+    <div class="field">
+      <label>País</label>
+      <input class="input" id="reg-pais" type="text" value="Colombia" readonly/>
+    </div>
+
+    <div class="field">
+      <label>Departamento</label>
+      <select id="reg-depto" class="input"></select>
+    </div>
+
+    <div class="field">
+      <label>Ciudad</label>
+      <select id="reg-city" class="input"></select>
+    </div>
+
+    <div class="field">
+      <label>Contraseña</label>
+      <input class="input" id="reg-pass" type="password" placeholder="••••••••"/>
+    </div>
+
+    <button class="btn" id="btn-register">Crear cuenta</button>
+
+    <p class="muted" style="margin-top:10px;">
+      ¿Ya tienes cuenta?
+      <a href="login.html">Inicia sesión</a>
+    </p>
+  </section>
+
+  <div class="container" style="max-width:420px; margin-top:14px;">
+    <div id="reg-status" class="msg hidden"></div>
+  </div>
+</main>
+
+<footer>E-TECH</footer>
+
+<!-- Firebase v8 -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<!-- Choices.js -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyD-8g9y9NqKNAViVCJRFHXanbQ7SKHasrE",
+    authDomain: "ecstatic-acumen-475300-n6.firebaseapp.com",
+    projectId: "ecstatic-acumen-475300-n6",
+    storageBucket: "ecstatic-acumen-475300-n6.appspot.com",
+    messagingSenderId: "21280979455",
+    appId: "1:21280979455:web:ee7fa8c053bb3a29620fca"
+  };
+  if (!firebase.apps.length) { firebase.initializeApp(firebaseConfig); }
+  console.log("[Register] Firebase v8 inicializado");
+</script>
+
+<script>
+  // Dataset departamentos/ciudades de Colombia
+  const DATA_URLS = [
+    "https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.json",
+    "https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json"
+  ];
+  let deptoChoices, cityChoices, CO_DATA = [];
+
+  async function loadColombiaData() {
+    for (const url of DATA_URLS) {
+      try {
+        const res = await fetch(url, { cache: "force-cache" });
+        if (res.ok) return await res.json();
+      } catch(_) {}
+    }
+    throw new Error("No se pudo cargar el listado de ciudades de Colombia.");
+  }
+
+  function initChoices() {
+    const deptoSelect = document.getElementById('reg-depto');
+    const citySelect  = document.getElementById('reg-city');
+
+    deptoSelect.innerHTML = '<option value="" selected disabled>Selecciona un departamento…</option>';
+    citySelect.innerHTML  = '<option value="" selected disabled>Selecciona primero un departamento…</option>';
+
+    deptoChoices = new Choices('#reg-depto', {
+      searchPlaceholderValue: 'Buscar departamento…',
+      searchResultLimit: 50,
+      shouldSort: true,
+      removeItemButton: false,
+      itemSelectText: '',
+    });
+
+    cityChoices = new Choices('#reg-city', {
+      searchPlaceholderValue: 'Buscar ciudad…',
+      searchResultLimit: 100,
+      shouldSort: true,
+      removeItemButton: false,
+      itemSelectText: '',
+    });
+  }
+
+  function fillDepartments() {
+    const deptoOptions = CO_DATA.map(d => ({ value: d.departamento, label: d.departamento }));
+    deptoChoices.setChoices(deptoOptions, 'value', 'label', true);
+  }
+
+  function onDepartmentChange() {
+    const selectedDepto = deptoChoices.getValue(true);
+    const found = CO_DATA.find(d => d.departamento === selectedDepto);
+    if (!found) {
+      cityChoices.clearStore();
+      cityChoices.setChoices([{ value: '', label: 'Selecciona primero un departamento…', disabled: true, selected: true }], 'value', 'label', true);
+      return;
+    }
+    const cities = found.ciudades || found.municipios || [];
+    const cityOptions = cities.map(c => ({ value: c, label: c }));
+    cityChoices.clearStore();
+    cityChoices.setChoices(cityOptions, 'value', 'label', true);
+  }
+
+  (async function bootCities(){
+    initChoices();
+    try {
+      CO_DATA = await loadColombiaData();
+      fillDepartments();
+      document.getElementById('reg-depto').addEventListener('change', onDepartmentChange);
+    } catch (err) {
+      console.error(err);
+      const status = document.getElementById('reg-status');
+      if (status) {
+        status.className = 'msg bad';
+        status.textContent = 'No se pudo cargar el listado de ciudades. Revisa tu conexión.';
+      }
+    }
+  })();
+</script>
+
+<script src="js/app.js"></script>
+<script>
+  App.initBase();
+  App.bindRegister();
+</script>
+</body>
+</html>

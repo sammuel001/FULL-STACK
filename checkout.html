@@ -11,93 +11,99 @@
 <header>
   <div class="brand">
     <div class="logo">
-  <img src="assets/logo.jpeg" alt="Logo de la tienda">
-</div>
-
-    <div>E‑commerce Simple</div>
+      <img src="assets/logo.jpeg" alt="Logo de la tienda">
+    </div>
+    <div>E-TECH</div>
   </div>
   <nav>
     <a class="navbtn secondary" href="index.html">Inicio</a>
     <a class="navbtn secondary" href="catalog.html">Catálogo</a>
     <a class="navbtn secondary navbtn badge" id="nav-cart" data-badge="0" href="cart.html">Carrito</a>
     <a class="navbtn secondary" href="checkout.html">Checkout</a>
+    <a class="navbtn secondary" href="orders.html">Mis pedidos</a>
     <a class="navbtn" id="btn-login-toggle" href="login.html">Login</a>
   </nav>
 </header>
 
-  <main class="container">
-    <div class="grid cols-2">
-      <section class="card">
-        <h2 class="title">Resumen del pedido</h2>
-        <div id="summary-empty" class="msg hidden">No hay productos en el carrito.</div>
-        <div id="summary-wrap" class="hidden">
-          <table>
-            <thead>
-              <tr><th>Producto</th><th class="right">Cant.</th><th class="right">Subtotal</th></tr>
-            </thead>
-            <tbody id="summary-body"></tbody>
-          </table>
-          <div class="right" style="margin-top:10px;">
-            <span class="muted">Total:</span> <strong id="summary-total"></strong>
+<main class="container">
+  <div class="grid cols-2">
+    <section class="card">
+      <h2 class="title">Resumen del pedido</h2>
+      <div id="summary-empty" class="msg hidden">No hay productos en el carrito.</div>
+      <div id="summary-wrap" class="hidden">
+        <table>
+          <thead>
+            <tr><th>Producto</th><th class="right">Cant.</th><th class="right">Subtotal</th></tr>
+          </thead>
+          <tbody id="summary-body"></tbody>
+        </table>
+        <div class="right" style="margin-top:10px;">
+          <span class="muted">Total:</span> <strong id="summary-total"></strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="title">Checkout</h2>
+      <div id="checkout-need-login" class="msg bad hidden">Debes iniciar sesión antes de finalizar la compra.</div>
+
+      <form id="form-checkout" class="grid" autocomplete="on">
+        <div>
+          <label>Nombre completo</label>
+          <input type="text" id="co-name" placeholder="Tu nombre" required />
+        </div>
+        <div>
+          <label>Dirección</label>
+          <input type="text" id="co-address" placeholder="Calle 123 #45" required />
+        </div>
+        <div class="grid cols-2">
+          <div>
+            <label>Ciudad</label>
+            <input type="text" id="co-city" placeholder="Bogotá" required />
+          </div>
+          <div>
+            <label>Método de pago</label>
+            <select id="co-pay" required>
+              <option value="">Selecciona…</option>
+              <option value="tarjeta">Tarjeta</option>
+              <option value="efectivo">Efectivo</option>
+              <option value="transferencia">Transferencia</option>
+            </select>
           </div>
         </div>
-      </section>
-      <section class="card">
-        <h2 class="title">Checkout</h2>
-        <div id="checkout-need-login" class="msg bad hidden">Debes iniciar sesión antes de finalizar la compra.</div>
-        <form id="form-checkout" class="grid" autocomplete="on">
-          <div>
-            <label>Nombre completo</label>
-            <input type="text" id="co-name" placeholder="Tu nombre" required />
-          </div>
-          <div>
-            <label>Dirección</label>
-            <input type="text" id="co-address" placeholder="Calle 123 #45" required />
-          </div>
-          <div class="grid cols-2">
-            <div>
-              <label>Ciudad</label>
-              <input type="text" id="co-city" placeholder="Bogotá" required />
-            </div>
-            <div>
-              <label>Método de pago</label>
-              <select id="co-pay" required>
-                <option value="">Selecciona…</option>
-                <option value="tarjeta">Tarjeta</option>
-                <option value="efectivo">Efectivo</option>
-                <option value="transferencia">Transferencia</option>
-              </select>
-            </div>
-          </div>
-          <div><button class="btn ok" type="submit">Finalizar compra</button></div>
-          <div id="checkout-msg" class="msg ok hidden">¡Compra realizada con éxito! (Simulada)</div>
-        </form>
-      </section>
-    </div>
-  </main>
-  <footer>Sin backend.</footer>
 
+        <div><button class="btn ok" type="submit">Finalizar compra</button></div>
+        <div id="checkout-msg" class="msg ok hidden">¡Compra realizada con éxito! (Simulada)</div>
+      </form>
+    </section>
+  </div>
+</main>
 
+<footer>E-TECH</footer>
 
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<!-- Firebase v8 -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
 
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyD-8g9y9NqKNAViVCJRFHXanbQ7SKHasrE",
-      authDomain: "ecstatic-acumen-475300-n6.firebaseapp.com",
-      projectId: "ecstatic-acumen-475300-n6",
-      storageBucket: "ecstatic-acumen-475300-n6.firebasestorage.app",
-      messagingSenderId: "21280979455",
-      appId: "1:21280979455:web:5cdb996c43d902f6620fca"
-    };
-    
-    // Inicialización simple y global
-    firebase.initializeApp(firebaseConfig);
-    console.log("Firebase App v8 INICIALIZADA"); 
-  </script>
-  <script src="js/app.js"></script>
-  <script>App.initBase(); App.renderCheckout(); App.bindCheckout();</script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyD-8g9y9NqKNAViVCJRFHXanbQ7SKHasrE",
+    authDomain: "ecstatic-acumen-475300-n6.firebaseapp.com",
+    projectId: "ecstatic-acumen-475300-n6",
+    storageBucket: "ecstatic-acumen-475300-n6.appspot.com",
+    messagingSenderId: "21280979455",
+    appId: "1:21280979455:web:5cdb996c43d902f6620fca"
+  };
+  if (!firebase.apps.length) { firebase.initializeApp(firebaseConfig); }
+  console.log("[Checkout] Firebase v8 inicializado");
+</script>
+
+<script src="js/app.js"></script>
+<script>
+  App.initBase();
+  App.renderCheckout();
+  App.bindCheckout();
+</script>
 </body>
 </html>
